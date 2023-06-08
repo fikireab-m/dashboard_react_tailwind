@@ -1,7 +1,15 @@
+import Admin from "./layouts/admin"
+import Auth from "./layouts/auth"
+import RTL from "./layouts/rtl"
+
 function App() {
 
   return (
-   <div></div>
+   <div>
+    <Admin/>
+    <Auth/>
+    <RTL/>
+   </div>
   )
 }
 
