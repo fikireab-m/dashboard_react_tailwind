@@ -1,5 +1,4 @@
 // Custom components
-import React from "react";
 
 function InputField(props) {
   const { label, id, extra, placeholder, cols, rows, state, disabled } = props;

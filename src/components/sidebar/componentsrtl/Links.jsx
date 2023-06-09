@@ -48,9 +48,9 @@ export function SidebarLinks(props) {
                   {route.name}
                 </p>
               </li>
-              {activeRoute(route.path) ? (
-                <div class="absolute top-px h-9 w-1 rounded-lg bg-brand-500 end-0 dark:bg-brand-400" />
-              ) : null}
+              {/* {activeRoute(route.path) ? (
+                <div className="absolute top-px h-9 w-1 rounded-lg bg-brand-500 end-0 dark:bg-brand-400" />
+              ) : null} */}
             </div>
           </Link>
         );

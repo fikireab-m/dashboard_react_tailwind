@@ -1,7 +1,7 @@
-import React, { useMemo } from "react";
-import CardMenu from "components/card/CardMenu";
-import Card from "components/card";
-import Checkbox from "components/checkbox";
+import { useMemo } from "react";
+import CardMenu from "../../../../components/card/CardMenu";
+import Card from "../../../../components/card";
+import Checkbox from "../../../../components/checkbox";
 
 import {
   useGlobalFilter,
@@ -49,10 +49,8 @@ const CheckTable = (props) => {
       <div className="mt-8 overflow-x-scroll xl:overflow-x-hidden">
         <table
           {...getTableProps()}
-          className="w-full"
-          variant="simple"
+          className="w-full mb-2"
           color="gray-500"
-          mb="24px"
         >
           <thead>
             {headerGroups.map((headerGroup, index) => (

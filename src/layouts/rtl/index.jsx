@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import Navbar from "components/navbar/RTL";
-import Sidebar from "components/sidebar/RTL";
-import Footer from "components/footer/Footer";
-import routes from "routes.js";
+import Navbar from "../../components/navbar";
+import Sidebar from "../../components/sidebar/RTL";
+import Footer from "../../components/footer/Footer";
+import routes from "../../routes";
 
-export default function RTL(props) {
+export default function Rtl(props) {
   const { ...rest } = props;
   const location = useLocation();
   const [open, setOpen] = React.useState(true);

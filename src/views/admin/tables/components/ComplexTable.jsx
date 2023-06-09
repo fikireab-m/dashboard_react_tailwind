@@ -1,5 +1,5 @@
-import CardMenu from "components/card/CardMenu";
-import Card from "components/card";
+import CardMenu from "../../../../components/card/CardMenu";
+import Card from "../../../../components/card";
 import {
   useGlobalFilter,
   usePagination,
@@ -8,7 +8,7 @@ import {
 } from "react-table";
 import { MdCheckCircle, MdCancel, MdOutlineError } from "react-icons/md";
 import { useMemo } from "react";
-import Progress from "components/progress";
+import Progress from "../../../../components/progress";
 const ComplexTable = (props) => {
   const { columnsData, tableData } = props;
 
@@ -37,15 +37,15 @@ const ComplexTable = (props) => {
 
   return (
     <Card extra={"w-full h-full p-4 sm:overflow-x-auto"}>
-      <div class="relative flex items-center justify-between">
-        <div class="text-xl font-bold text-navy-700 dark:text-white">
+      <div className="relative flex items-center justify-between">
+        <div className="text-xl font-bold text-navy-700 dark:text-white">
           Complex Table
         </div>
         <CardMenu />
       </div>
 
-      <div class="mt-8 h-full overflow-x-scroll xl:overflow-hidden">
-        <table {...getTableProps()} className="w-full">
+      <div className="mt-8 h-full overflow-x-scroll xl:overflow-hidden">
+      <table {...getTableProps()} className="w-full mb-2">
           <thead>
             {headerGroups.map((headerGroup, index) => (
               <tr {...headerGroup.getHeaderGroupProps()} key={index}>
