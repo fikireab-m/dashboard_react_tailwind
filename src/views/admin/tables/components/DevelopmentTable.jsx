@@ -1,17 +1,17 @@
-import CardMenu from "../../../../components/card/CardMenu";
-import Card from "../../../../components/card";
+import CardMenu from "components/card/CardMenu";
+import Card from "components/card";
 import { DiApple } from "react-icons/di";
 import { DiAndroid } from "react-icons/di";
 import { DiWindows } from "react-icons/di";
 
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   useGlobalFilter,
   usePagination,
   useSortBy,
   useTable,
 } from "react-table";
-import Progress from "../../../../components/progress";
+import Progress from "components/progress";
 
 const DevelopmentTable = (props) => {
   const { columnsData, tableData } = props;
@@ -41,19 +41,20 @@ const DevelopmentTable = (props) => {
 
   return (
     <Card extra={"w-full h-full p-4"}>
-      <div className="relative flex items-center justify-between">
-        <div className="text-xl font-bold text-navy-700 dark:text-white">
+      <div class="relative flex items-center justify-between">
+        <div class="text-xl font-bold text-navy-700 dark:text-white">
           Development Table
         </div>
         <CardMenu />
       </div>
 
-      <div className="h-full overflow-x-scroll xl:overflow-x-hidden">
+      <div class="h-full overflow-x-scroll xl:overflow-x-hidden">
         <table
           {...getTableProps()}
-          className="mt-8 h-max w-full mb-2 simple"
+          className="mt-8 h-max w-full"
+          variant="simple"
           color="gray-500"
-
+          mb="24px"
         >
           <thead>
             {headerGroups.map((headerGroup, index) => (

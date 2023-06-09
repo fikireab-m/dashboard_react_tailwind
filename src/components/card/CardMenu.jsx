@@ -1,5 +1,5 @@
 import React from "react";
-import Dropdown from "../dropdown";
+import Dropdown from "components/dropdown";
 import { AiOutlineUser } from "react-icons/ai";
 import { BsThreeDots } from "react-icons/bs";
 import { FiSettings } from "react-icons/fi";

@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import CardMenu from "../../../../components/card/CardMenu";
 import Checkbox from "../../../../components/checkbox";
 import Card from "../../../../components/card";
@@ -50,7 +50,9 @@ const CheckTable = (props) => {
         <table
           {...getTableProps()}
           className="w-full"
+          variant="simple"
           color="gray-500"
+          mb="24px"
         >
           <thead>
             {headerGroups.map((headerGroup, index) => (

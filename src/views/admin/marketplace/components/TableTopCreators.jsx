@@ -1,6 +1,6 @@
-import Card from "../../../../components/card";
-import Progress from "../../../../components/progress";
-import { useMemo } from "react";
+import Card from "components/card";
+import Progress from "components/progress";
+import React, { useMemo } from "react";
 import {
   useGlobalFilter,
   usePagination,
@@ -92,7 +92,7 @@ function TopCreatorTable(props) {
                       );
                     } else if (cell.column.Header === "Rating") {
                       data = (
-                        <div className="mx-2 flex font-bold">
+                        <div class="mx-2 flex font-bold">
                           <Progress width="w-16" value={cell.value} />
                         </div>
                       );

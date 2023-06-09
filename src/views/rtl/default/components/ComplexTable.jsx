@@ -1,4 +1,4 @@
-import CardMenu from "../../../../components/card/CardMenu";
+import CardMenu from "components/card/CardMenu";
 import Card from "../../../../components/card";
 import {
   useGlobalFilter,

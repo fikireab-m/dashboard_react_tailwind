@@ -1,6 +1,6 @@
-import CardMenu from "../../../../components/card/CardMenu";
-import Card from "../../../../components/card";
-import { useMemo } from "react";
+import CardMenu from "components/card/CardMenu";
+import Card from "components/card";
+import React, { useMemo } from "react";
 import {
   useGlobalFilter,
   usePagination,
@@ -44,7 +44,7 @@ const ColumnsTable = (props) => {
       </header>
 
       <div className="mt-8 overflow-x-scroll xl:overflow-x-hidden">
-        <table {...getTableProps()} className="w-full mb-2">
+        <table {...getTableProps()} className="w-full">
           <thead>
             {headerGroups.map((headerGroup, index) => (
               <tr {...headerGroup.getHeaderGroupProps()} key={index}>
