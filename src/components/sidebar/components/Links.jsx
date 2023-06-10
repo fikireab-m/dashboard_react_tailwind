@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import DashIcon from "./icons/DashIcon";
+import DashIcon from "../../icons/DashIcon";
 // chakra imports
 
 export function SidebarLinks(props) {
@@ -49,7 +49,7 @@ export function SidebarLinks(props) {
                 </p>
               </li>
               {activeRoute(route.path) ? (
-                <div class="absolute right-0 top-px h-9 w-1 rounded-lg bg-brand-500 dark:bg-brand-400" />
+                <div className="absolute right-0 top-px h-9 w-1 rounded-lg bg-brand-500 dark:bg-brand-400" />
               ) : null}
             </div>
           </Link>

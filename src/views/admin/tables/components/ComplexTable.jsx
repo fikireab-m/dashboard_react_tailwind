@@ -8,7 +8,7 @@ import {
 } from "react-table";
 import { MdCheckCircle, MdCancel, MdOutlineError } from "react-icons/md";
 import { useMemo } from "react";
-import Progress from "components/progress";
+import Progress from "../../../../components/progress";
 const ComplexTable = (props) => {
   const { columnsData, tableData } = props;
 

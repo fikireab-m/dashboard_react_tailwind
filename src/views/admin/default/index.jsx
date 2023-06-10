@@ -8,7 +8,7 @@ import { MdBarChart, MdDashboard } from "react-icons/md";
 
 import { columnsDataCheck, columnsDataComplex } from "./variables/columnsData";
 
-import Widget from "components/widget/Widget";
+import Widget from "../../../components/widget/Widget";
 import CheckTable from "./components/CheckTable";
 import ComplexTable from "./components/ComplexTable";
 import DailyTraffic from "./components/DailyTraffic";
